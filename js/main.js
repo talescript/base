@@ -1,6 +1,6 @@
 
 // Mobile height fix
-function detectChange(){
+/* function detectChange(){
     const height = Math.max(document.documentElement.clientHeight, 
         window.innerHeight || 0);
 
@@ -8,7 +8,7 @@ function detectChange(){
     viewportHeight.style['min-height'] = height + 'px';
 }
 
-window.addEventListener("orientationchange", detectChange, false);
+window.addEventListener("orientationchange", detectChange, false); */
 
 
 // Modal
