@@ -1,5 +1,5 @@
 
-// Mobile height fix
+/* // Firefox does not want to cooperate
 function detectChange(){
     const height = Math.max(document.documentElement.clientHeight, 
         window.innerHeight || 0);
@@ -9,7 +9,7 @@ function detectChange(){
     alert("workkkkking");
 }
 
-window.addEventListener("orientationchange", detectChange, false); 
+window.addEventListener("orientationchange", detectChange, false);  */
 
 // Modal
 const btn_modal = document.querySelector('.btn--modal');
