@@ -19,6 +19,7 @@ if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigat
 
     window.onresize = sizeBackground;
     sizeBackground();
+    alert("yessss")
 }
 function sizeBackground(){
     viewportHeight.style['min-height'] = height + 'px';
