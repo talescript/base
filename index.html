@@ -28,7 +28,7 @@
             </ul>
         </div>
     </nav>
-    <header class="hero--color">
+    <header class="hero--color toggle-menu">
         <div class="container">
             <div class="header hero flex-center flex-center--direction-col">
                 <h1>Page Title</h1>
@@ -86,14 +86,24 @@
                 </div>
             </div>
         </section>
-        <section class="modal">
-            <div class="modal--header modal--header--style">Header <div class="close">X</div></div>
-            <div class="modal--content modal--content--style">Content</div>
-            <div class="modal--footer modal--footer--style">Footer</div>
+        
+        <section>
+            <div class="container">
+            <h3>Modal Using javascript</h3>
+            <div class="modal">
+                <div class="modal--header modal--header--style">Header
+                    <button class="btn close">Close menu</button>
+                </div>
+                <div class="modal--content modal--content--style">Content</div>
+                <div class="modal--footer modal--footer--style">Footer</div>
+            </div>
+            <button class="btn btn--modal">open modal</button>
+        </div>
         </section>
-        <button class="btn btn--modal">open modal</button>
+
     </main>
     <footer></footer>
     <script src="js/main.js"></script>
 </body>
+
 </html>

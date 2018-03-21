@@ -314,16 +314,16 @@ h1 {
 }
 
 .modal--header--style{
-    background: #000;
+    background: rgb(226, 55, 95);
     color: #fff;
 }
 
 .modal--content--style {
-    background: hotpink;
+    background: #FE4B74;
 }
 
 .modal--footer--style {
-    background: indianred;
+    background: rgb(226, 55, 95);
 }
 
 @keyframes fadeIn {

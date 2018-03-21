@@ -1,12 +1,14 @@
-/* const height = Math.max(document.documentElement.clientHeight, 
+// Mobile height fix
+const height = Math.max(document.documentElement.clientHeight, 
                         window.innerHeight || 0);
 
 const viewportHeight = document.querySelector('.hero');
 viewportHeight.style['min-height'] = height + 'px';
 
-console.log(viewportHeight); */
+console.log(viewportHeight);
 
 
+// Modal
 const btn_modal = document.querySelector('.btn--modal');
 const close = document.querySelector('.close');
 const modal = document.querySelector('.modal');
