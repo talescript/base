@@ -1,29 +1,15 @@
 
 // Mobile height fix
-/* function detectChange(){
+function detectChange(){
     const height = Math.max(document.documentElement.clientHeight, 
         window.innerHeight || 0);
 
-    const viewportHeight = document.querySelector('.hero');
+    const viewportHeight = document.querySelector('.hero--bg');
     viewportHeight.style['min-height'] = height + 'px';
+    alert("workkkkking");
 }
 
-window.addEventListener("orientationchange", detectChange, false); */
-
-// Damn it firefox jumpy scrollbar fix
-const backgroundImage = document.querySelector(".hero--bg");
-
-if (/Mobi/.test(navigator.userAgent)) {
-    const height = Math.max(document.documentElement.clientHeight, 
-        window.innerHeight || 0);
-
-    window.onresize = sizeBackground;
-    sizeBackground();
-    alert("yessss");
-}
-function sizeBackground(){
-    viewportHeight.style['min-height'] = height + 'px';
-}
+window.addEventListener("orientationchange", detectChange, false); 
 
 // Modal
 const btn_modal = document.querySelector('.btn--modal');
