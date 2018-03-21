@@ -6,7 +6,6 @@ function detectChange(){
 
     const viewportHeight = document.querySelector('.hero');
     viewportHeight.style['min-height'] = height + 'px';
-    alert("screeneeen")
 }
 
 window.addEventListener("orientationchange", detectChange, false);
