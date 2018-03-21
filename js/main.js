@@ -13,7 +13,7 @@ window.addEventListener("orientationchange", detectChange, false); */
 // Damn it firefox jumpy scrollbar fix
 const backgroundImage = document.querySelector(".hero--bg");
 
-if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+if (/Mobi/.test(navigator.userAgent)) {
     const height = Math.max(document.documentElement.clientHeight, 
         window.innerHeight || 0);
 
