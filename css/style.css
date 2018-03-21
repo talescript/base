@@ -36,6 +36,17 @@ body {
 }
 
 /**
+ * Jumpy scrollbar test
+ */
+html {
+    overflow: hidden;
+}
+body {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+/**
  * Nav Styles
  */
 nav ul {
