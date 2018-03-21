@@ -5,7 +5,7 @@ const height = Math.max(document.documentElement.clientHeight,
 const viewportHeight = document.querySelector('.hero');
 viewportHeight.style['min-height'] = height + 'px';
 
-console.log(viewportHeight);
+
 
 
 // Modal
@@ -18,7 +18,9 @@ close.addEventListener("click", closeModal);
 
 function openModal() {
     modal.classList.toggle("open");
+    document.body.style.overflow = 'hidden';
 }
 function closeModal(){
     modal.classList.toggle("open");
+    document.body.style.overflow = 'auto';
 }
