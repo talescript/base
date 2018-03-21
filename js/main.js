@@ -5,3 +5,18 @@ const viewportHeight = document.querySelector('.hero');
 viewportHeight.style['min-height'] = height + 'px';
 
 console.log(viewportHeight); */
+
+
+const btn_modal = document.querySelector('.btn--modal');
+const close = document.querySelector('.close');
+const modal = document.querySelector('.modal');
+
+btn_modal.addEventListener("click", openModal);
+close.addEventListener("click", closeModal);
+
+function openModal() {
+    modal.classList.toggle("open");
+}
+function closeModal(){
+    modal.classList.toggle("open");
+}
