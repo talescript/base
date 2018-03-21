@@ -1,11 +1,15 @@
+
 // Mobile height fix
-const height = Math.max(document.documentElement.clientHeight, 
-                        window.innerHeight || 0);
+function detectChange(){
+    const height = Math.max(document.documentElement.clientHeight, 
+        window.innerHeight || 0);
 
-const viewportHeight = document.querySelector('.hero');
-viewportHeight.style['min-height'] = height + 'px';
+    const viewportHeight = document.querySelector('.hero');
+    viewportHeight.style['min-height'] = height + 'px';
+    alert("screeneeen")
+}
 
-
+window.addEventListener("orientationchange", detectChange, false);
 
 
 // Modal
