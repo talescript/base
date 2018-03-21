@@ -10,6 +10,19 @@
 
 window.addEventListener("orientationchange", detectChange, false); */
 
+// Damn it firefox jumpy scrollbar fix
+const backgroundImage = document.querySelector(".hero--bg");
+
+if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
+    backgroundImage.style.top = 'auto';
+    backgroundImage.style.bottom = 0;
+
+    window.onresize = sizeBackground;
+    sizeBackground();
+}
+function sizeBackground(){
+    backgroundImage.style.height = screen.height;
+}
 
 // Modal
 const btn_modal = document.querySelector('.btn--modal');
