@@ -213,6 +213,11 @@ h1 {
     background-size: cover;
 }
 
+.test {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .hero--color {
     background-color: #373B44;
     color: #fff;
