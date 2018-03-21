@@ -19,7 +19,7 @@ if (/Mobi/.test(navigator.userAgent)) {
 
     window.onresize = sizeBackground;
     sizeBackground();
-    alert("yessss")
+    alert("yessss");
 }
 function sizeBackground(){
     viewportHeight.style['min-height'] = height + 'px';
