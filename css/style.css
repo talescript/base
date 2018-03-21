@@ -203,7 +203,7 @@ h1 {
  * Header
  */
 .hero {
-    height: calc(100vh - 74px);
+    height: 100vh;
 }
 
 .hero--color {
