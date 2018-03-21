@@ -14,14 +14,14 @@ window.addEventListener("orientationchange", detectChange, false); */
 const backgroundImage = document.querySelector(".hero--bg");
 
 if ((/Android|iPhone|iPad|iPod|BlackBerry/i).test(navigator.userAgent || navigator.vendor || window.opera)) {
-    backgroundImage.style.top = 'auto';
-    backgroundImage.style.bottom = 0;
+    const height = Math.max(document.documentElement.clientHeight, 
+        window.innerHeight || 0);
 
     window.onresize = sizeBackground;
     sizeBackground();
 }
 function sizeBackground(){
-    backgroundImage.style.height = screen.height;
+    viewportHeight.style['min-height'] = height + 'px';
 }
 
 // Modal
