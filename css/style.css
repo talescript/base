@@ -111,6 +111,11 @@ img {
     border-style: none;
 }
 
+figure {
+    margin: 0;
+}
+
+
 /**
  * Fluid Typography
  */
@@ -195,11 +200,9 @@ h1 {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 1em;
     }
-}
-
-.grid div {
-    
-    padding: 0 10px;
+    ul.grid {
+        padding: 0;
+    }
 }
 
 /** BEM
@@ -261,29 +264,72 @@ h1 {
     flex-direction: column;
 }
 
-.flex-gallery {
-    font-size: 0;
-    display: ms-flexbox;
-    -ms-flexbox-wrap: wrap;
-    -ms-flexbox-direction: column;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    display: -webkit-box;
-    display: flex;
-}
-
-.flex-gallery--item {
-    -webkit-box-flex: auto;
-    -ms-flex: auto;
-    flex: auto;
-    width: 200px;
-    margin: 0.5vmax;
-}
-
-@media screen and (max-width: 400px) {
-    .responsive-gallery--item {
-        margin: 0px;
+@supports (display: grid){
+    @media (min-width: 600px){
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+        .gallery--item {
+            margin: 0 auto;
+            width: 100%;
+        }
+        .info.first {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .info.second {
+            grid-column: span 2;
+        }
+        .figure-one {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+        .figure-six {
+            grid-column: span 2;
+        }
+        .figure-seven {
+            grid-column: span 3;
+        }
+        .figure-nine {
+            grid-column: -4 / span 3;
+            grid-row: 4;
+        }
+        figure img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            filter: sepia(80%);
+        }
     }
+}
+
+.gallery .info {
+    background-color: #292727;
+    color: #fff;
+    padding: 40px;
+}
+
+.info h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.info {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.info p {
+    font-weight: lighter;
+    margin-bottom: 1em;
+}
+
+.info a {
+    text-decoration: none;
+    background: #d80c0c;
+    color: #fff;
+    border: none;
 }
 
 .btn {
@@ -303,8 +349,6 @@ h1 {
     outline: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    
 }
 
 .btn--state-success {
