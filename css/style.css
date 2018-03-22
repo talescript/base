@@ -271,17 +271,21 @@ h1 {
     justify-content: space-around;
 }
 
-.gallery > figure {
-    flex: 1 1 35%;
+@media (min-width: 600px) {
+    .gallery > figure {
+        flex: 1 1 35%;
+    }
 }
 
 
 @supports (display: grid){
     @media (min-width: 600px){
+        
         .gallery {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
         }
+
         .gallery--item {
             margin: 0 auto;
             width: 100%;
@@ -307,6 +311,7 @@ h1 {
             grid-column: -4 / span 3;
             grid-row: 4;
         }
+
     }
 }
 
