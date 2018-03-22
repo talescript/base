@@ -273,7 +273,7 @@ h1 {
 
 @media (min-width: 600px) {
     .gallery > figure {
-        flex: 1 1 35%;
+        flex: 1 1 30%;
     }
 }
 
