@@ -190,6 +190,19 @@ h1 {
 /** Need to implement a
  * grid fallback
  */
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (min-width: 600px) {
+    .grid > .card {
+        flex: 1 1 25%;
+        margin: 20px 10px;
+    }
+}
 
 /**
  * Responsive Grid
@@ -202,6 +215,9 @@ h1 {
     }
     ul.grid {
         padding: 0;
+    }
+    .grid > .card {
+        margin: 0;
     }
 }
 
@@ -244,14 +260,6 @@ h1 {
 
 .card h3 {
     text-align: center;
-}
-
-.cartoon {
-    margin: 0 auto;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background: red;
 }
 
 .flex-center {
@@ -453,4 +461,12 @@ figure img {
 section {
     background: #fff8e7;
     /* cosmic latte */
+}
+
+.cartoon {
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: red;
 }
