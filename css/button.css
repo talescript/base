@@ -1,0 +1,36 @@
+/** BEM
+ * BLOCK ELEMENT MODIFIER
+ * Header
+ */
+.btn {
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 40px;
+    border-radius: 3px;
+    padding: 7px 12px;
+    border: 1px solid#d5d5d5;
+    background-image: linear-gradient(#eee, #ddd);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11),
+                0 1px 3px rgba(0, 0, 0, .08);
+    font: 700 13px/18px Helvetica, arial;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .15s ease;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.btn--state-success {
+    color: #fff;
+    background: #569e3d linear-gradient(#79d858, #569e3d) repeat-x;
+    border-color: #4a993e;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: translateY(1px);
+}

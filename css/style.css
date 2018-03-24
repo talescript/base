@@ -1,4 +1,3 @@
-
 /**
  * Base Styles
  */
@@ -30,7 +29,8 @@ html, body {
     min-height: 100%;
 }
 
-body {
+body, ul,
+figure {
     margin: 0;
     padding: 0;
 }
@@ -88,7 +88,6 @@ nav ul li a {
     .nav-logo {
         margin-right: initial;
     }
-
 }
 
 /*  legacy browsers support
@@ -111,10 +110,11 @@ img {
     border-style: none;
 }
 
-figure {
-    margin: 0;
+figure img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
-
 
 /**
  * Fluid Typography
@@ -191,318 +191,15 @@ h1 {
     }
 }
 
-/** Need to implement a
- * grid fallback
- */
-.grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-@media (min-width: 600px) {
-    .grid > .card {
-        flex: 1 1 25%;
-        margin: 20px 10px;
-    }
-}
-
-/**
- * Responsive Grid
- */
- @supports (display: grid) {
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 1em;
-    }
-    ul.grid {
-        padding: 0;
-    }
-    .grid > .card {
-        margin: 0;
-    }
-}
-
-/** BEM
- * BLOCK ELEMENT MODIFIER
- * Header
- */
-.hero {
-    height: 100vh;
-}
-
-.hero--bg {
-    
-    background-image: url(../assets/nine.jpg),
-    linear-gradient(#a8c0ff, #3f2b96);
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: multiply;
-    color: #fff;
-}
-
-.hero--color {
-    background-color: #373B44;
-    color: #fff;
-}
-
-.card {
-
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
-    text-shadow: none;
-    background: #fff;
-    color: rgba(14,30,37,.87);
-    -webkit-font-smoothing: subpixel-antialiased;
-    -moz-osx-font-smoothing: auto;
-    text-align: left;
-    font-size: .8em;
-}
-
-.card-content {
-    padding: 0 1.618em;
-    padding-bottom: 1.234em;
-}
-
-.card h3 {
-    text-align: center;
-}
-
-.flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-center--direction-col {
-    flex-direction: column;
-}
-
-.gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-@media (min-width: 600px) {
-    .gallery > figure {
-        flex: 1 1 30%;
-    }
-}
-
-
-@supports (display: grid){
-    @media (min-width: 600px){
-        
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-        }
-
-        .gallery--item {
-            margin: 0 auto;
-            width: 100%;
-        }
-        .info.first {
-            grid-column: span 2;
-            grid-row: span 2;
-        }
-        .info.second {
-            grid-column: span 2;
-        }
-        .figure-one {
-            grid-column: span 3;
-            grid-row: span 2;
-        }
-        .figure-six {
-            grid-column: span 2;
-        }
-        .figure-seven {
-            grid-column: span 3;
-        }
-        .figure-nine {
-            grid-column: -4 / span 3;
-            grid-row: 4;
-        }
-
-    }
-}
-
-figure img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.gallery > figure img {
-    filter: sepia(80%);
-}
-
-.gallery .info {
-    background-color: #292727;
-    color: #fff;
-    padding: 40px;
-}
-
-.info h2 {
-    font-size: 2em;
-    margin-bottom: 1em;
-}
-
-.info {
-    margin: 0 auto;
-    width: 100%;
-}
-
-.info p {
-    font-weight: lighter;
-    margin-bottom: 1em;
-}
-
-.info a {
-    text-decoration: none;
-    background: #d80c0c;
-    color: #fff;
-    border: none;
-}
-
-.btn {
-    white-space: nowrap;
-    display: inline-block;
-    line-height: 40px;
-    border-radius: 3px;
-    padding: 7px 12px;
-    border: 1px solid#d5d5d5;
-    background-image: linear-gradient(#eee, #ddd);
-    box-shadow: 0 4px 6px rgba(50, 50, 93, .11),
-                0 1px 3px rgba(0, 0, 0, .08);
-    font: 700 13px/18px Helvetica, arial;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all .15s ease;
-    outline: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.btn--state-success {
-    color: #fff;
-    background: #569e3d linear-gradient(#79d858, #569e3d) repeat-x;
-    border-color: #4a993e;
-}
-
-.btn:hover {
-    cursor: pointer;
-}
-
-.btn:active {
-    transform: translateY(1px);
-}
-
-/**
- * Modal
- */
-.modal {
-    display: none;
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: -450px;
-    width: 100%;
-    animation-name: slideDown;
-    animation-duration: 0.4s;
-    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-    animation-fill-mode: forwards;
-}
-
-.modal.open {
-    display: flex;
-    flex-direction: column;
-}
-
-.modal--header,
-.modal--footer {
-    height: 100px;
-}
-
-.modal--content {
-    height: 100%;
-    overflow-y: auto;
-}
-
-.modal--header--style{
-    background: rgb(226, 55, 95);
-    color: #fff;
-}
-
-.modal--content--style {
-    background: #FE4B74;
-}
-
-.modal--footer--style {
-    background: rgb(226, 55, 95);
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes slideDown {
-    0% {transform: translate3d(0, 0, 0);}
-    100% {transform: translate3d(0, 450px, 0);}
-}
-
-/**
- * Styles
- */
-.bg-color {
-    background-color: #FE4B74;
-    color: #fff;
-}
-
 .section-padding {
     padding-top: 4em;
     padding-bottom: 4em;
 }
 
+/**
+ * Styles
+ */
 section {
     background: #fff8e7;
     /* cosmic latte */
 }
-
-/**
- * ::before & ::after practice
- */
-
-
- .grid-card {
-     display: grid;
-     grid-template-columns: 1fr;
-     
- }
-
-.grid-card figure {
-    grid-column: 1;
-    grid-row: 1 / 3;
-}
-
- .grid-card-content {
-    color: #fff;
-    text-align: center;
-    grid-row: 1;
-    grid-column: 1 / 3;
-    opacity: 0;
-    transition: opacity 300ms ease-in;
- }
-
- .grid-card-content:hover {
-    opacity: 1;
- }

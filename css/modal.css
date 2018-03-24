@@ -1,0 +1,53 @@
+/**
+ * Modal
+ */
+ .modal {
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: -450px;
+    width: 100%;
+    animation-name: slideDown;
+    animation-duration: 0.4s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-fill-mode: forwards;
+}
+
+.modal.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal--header,
+.modal--footer {
+    height: 100px;
+}
+
+.modal--content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.modal--header--style{
+    background: rgb(226, 55, 95);
+    color: #fff;
+}
+
+.modal--content--style {
+    background: #FE4B74;
+}
+
+.modal--footer--style {
+    background: rgb(226, 55, 95);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideDown {
+    0% {transform: translate3d(0, 0, 0);}
+    100% {transform: translate3d(0, 450px, 0);}
+}

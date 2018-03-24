@@ -1,0 +1,25 @@
+.hero {
+    height: 100vh;
+}
+
+.hero--bg {
+    background-image: url(../assets/nine.jpg),
+    linear-gradient(#a8c0ff, #3f2b96);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: #fff;
+}
+
+.hero--color {
+    background-color: #373B44;
+    color: #fff;
+}
+
+.flex-center--hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
