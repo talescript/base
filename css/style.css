@@ -43,7 +43,7 @@ p {
 
 /* Responsive images */
 img {
-    height: auto;
+    min-height: 100%;
     max-width: 100%;
     vertical-align: middle;
     border: 0;
@@ -52,8 +52,6 @@ img {
 
 figure img {
     object-fit: cover;
-    min-width: 100%;
-    min-height: 100%;
 }
 
 /**
