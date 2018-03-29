@@ -154,12 +154,14 @@ ul.card-grid {
     flex: 2;
 }
 
-.product-card__img-container figure {
-    height: 100%;
-}
-.product-card__img-container figure
-.product__img {
-    height: 100%;
+@media (min-width: 600px) {
+    .product-card__img-container figure {
+        height: 100%;
+    }
+    .product-card__img-container figure
+    .product__img {
+        height: 100%;
+    }
 }
 
 .product-card__content {
