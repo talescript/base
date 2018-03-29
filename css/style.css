@@ -100,7 +100,7 @@ h1, h2, h3, h4 {
 /**
  * Nav Styles
  */
- nav ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -116,24 +116,12 @@ nav ul li a {
     padding-bottom: 0.5em;
 }
 
-.nav--style {
-    box-shadow: 0px 0px 14px 0 rgba(0, 0, 0, 0.75);
-}
-
 .nav-container {
     display: flex;
 }
 
 .nav-logo {
     margin-right: auto;
-}
-
-.active:hover {
-    color: rgb(124, 116, 116);
-}
-
-.nav-logo--color {
-    color: #fff;
 }
 
 .nav-container li:not(:first-child) a {
@@ -150,6 +138,18 @@ nav ul li a {
     .nav-logo {
         margin-right: initial;
     }
+}
+
+.nav--style {
+    box-shadow: 0px 0px 14px 0 rgba(0, 0, 0, 0.75);
+}
+
+.active:hover {
+    color: rgb(124, 116, 116);
+}
+
+.nav-logo--color {
+    color: #fff;
 }
 
 /*  legacy browsers support
@@ -192,8 +192,8 @@ nav ul li a {
     }
 }
 
-.x-space,
-header {
+
+.x-space {
     margin-bottom: 4em;
 }
 
@@ -205,6 +205,10 @@ body {
     /* cosmic latte */
 }
 
+
+/**
+ * Three layered box styling
+ */
 .box {
     margin: 100px auto;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
