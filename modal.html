@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/cards.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/gallery.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/hero.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/modal.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/button.css" />
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-container">
+                <li class="nav-logo">
+                    <a href="../index.html" title="brandName" class="active">brandName</a>
+                </li>
+                <li>
+                    <a href="nav.html">Responsive navbar</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="modal.html">Modal</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+            <div class="mobile-nav">
+                <div class="modal">
+                    <div class="modal--header modal--header--style modal-nav-l">
+                        <li class="nav-logo">
+                            <a href="../index.html" title="brandName" class="active">brandName</a>
+                        </li>
+                        <a class="close"></a>
+                    </div>
+                    <div class="modal--content modal--content--style">
+                        <li>
+                            <a href="nav.html">Responsive navbar</a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="modal.html">Modal</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </div>
+                    <div class="modal--footer modal--footer--style">Footer</div>
+                </div>
+                <div class="mobile-nav__header">
+                    <li class="nav-logo">
+                        <a href="../index.html" title="brandName" class="active">brandName</a>
+                    </li>
+                    <a class="btn--modal mobile-ham"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        section div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 80vh;
+        }
+        section div h3 {margin-bottom: 2rem;}
+    </style>
+
+    <section class="x-space">
+        <div class="container">
+            <h3>Modal Using javascript</h3>
+            
+            <div class="modal">
+                <div class="modal--header modal--header--style">Header
+                    <button class="btn close">Close menu</button>
+                </div>
+                <div class="modal--content modal--content--style">Content</div>
+                <div class="modal--footer modal--footer--style">Footer</div>
+            </div>
+            <button class="btn btn--modal">open modal</button>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

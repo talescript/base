@@ -7,6 +7,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    /* pos rel fixes gallery hiding
+       the navbar on mobile */
+    position: relative;
+    z-index: -1;
 }
 
 @media (min-width: 600px) {

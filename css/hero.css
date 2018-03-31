@@ -29,11 +29,19 @@
 }
 
 @supports (clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%)){
-    .clip {
+    .clip-right {
         clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
         margin-bottom: -10vw;
     }
 }
+
+@supports (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw))){
+    .clip-left {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
+        margin-bottom: -10vw;
+    }
+}
+
 
 /**
  * Place on element below
