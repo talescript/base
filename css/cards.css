@@ -98,7 +98,7 @@
  * can be used for any type
  * of responsive grid.
  */
-.card-grid {
+.grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -106,7 +106,7 @@
 }
 
 @media (min-width: 600px) {
-    .card-grid > .card {
+    .grid > .card {
         flex: 1 1 25%;
         margin: 20px 10px;
     }
@@ -116,22 +116,22 @@
  * Responsive Grid
  */
 @supports (display: grid) {
-    .card-grid {
+    .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 2rem;
     }
-    ul.card-grid {
+    ul.grid {
         padding: 0;
     }
-    .card-grid > .card {
+    .grid > .card {
         margin: 0;
     }
 }
 
 @media (min-width: 600px) {
     @supports (display: grid) {
-        .card-grid {
+        .grid {
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
     }
