@@ -8,12 +8,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/modal.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/button.css" />
     <title>Responsive Navbar using a modal</title>
 </head>
 
 <body>
     <header>
+
 
         <nav class="nav">
             <div class="container">
@@ -34,16 +34,39 @@
                         <a href="">Contact</a>
                     </li>
                 </ul>
+                <div class="mobile-nav">
+                    <div class="modal">
+                        <div class="modal--header modal--header--style">
+                            <li class="nav-logo">
+                                <a href="../index.html" title="brandName" class="active">brandName</a>
+                            </li>
+                            <button class="btn close">Close menu</button>
+                        </div>
+                        <div class="modal--content modal--content--style">
+                            <li>
+                                <a href="">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="">Services</a>
+                            </li>
+                            <li>
+                                <a href="">Blog</a>
+                            </li>
+                            <li>
+                                <a href="">Contact</a>
+                            </li>
+                        </div>
+                        <div class="modal--footer modal--footer--style">Footer</div>
+                    </div>
+                    <div class="mobile-nav__header">
+                        <li class="nav-logo">
+                            <a href="../index.html" title="brandName" class="active">brandName</a>
+                        </li>
+                        <a class="btn btn--modal mobile-ham">Menu</a>
+                    </div>
+                </div>
             </div>
         </nav>
-        <div class="modal">
-            <div class="modal--header modal--header--style">Header
-                <button class="btn close">Close menu</button>
-            </div>
-            <div class="modal--content modal--content--style">Content</div>
-            <div class="modal--footer modal--footer--style">Footer</div>
-        </div>
-        <button class="btn btn--modal">open modal</button>
     </header>
 
     <!-- Modal -->
