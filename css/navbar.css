@@ -62,7 +62,7 @@ nav ul li a,
         content: "\00d7";
         display: inline-block;
         margin-right: 0.25rem;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .mobile-ham, .close {
         cursor: pointer;
