@@ -21,16 +21,14 @@
 
 .modal--header,
 .modal--footer {
-    height: 100px;
+    padding: 0.4rem 0.5rem;
 }
 
 .modal--content {
     height: 100%;
     overflow-y: auto;
-    padding-top: 4rem;
+    padding: 4rem 0.5rem 0;
 }
-
-
 
 @keyframes fadeIn {
     from {opacity: 0;}
@@ -42,15 +40,27 @@
     100% {transform: translate3d(0, 450px, 0);}
 }
 
+/**
+ * Nav Font Size
+ */
+.nav-logo,
+.modal--content--style li a,
+.mobile-ham,
+.close {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
 .modal--header--style{
-    background: rgb(226, 55, 95);
-    color: #fff;
+    background: #ccdbdc;
 }
 
 .modal--content--style {
-    background: #FE4B74;
+    background: #ccdbdc;
+    color: #003249;
 }
 
 .modal--footer--style {
-    background: rgb(226, 55, 95);
+    background: #ccdbdc;
+    color: #003249;
 }
