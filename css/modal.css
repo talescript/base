@@ -51,16 +51,9 @@
     font-weight: 300;
 }
 
-.modal--header--style{
-    background: #ccdbdc;
-}
-
-.modal--content--style {
-    background: #ccdbdc;
-    color: #003249;
-}
-
+.modal--header--style,
+.modal--content--style,
 .modal--footer--style {
-    background: #ccdbdc;
-    color: #003249;
+    background: #b9314f;
+    color: #fff;
 }

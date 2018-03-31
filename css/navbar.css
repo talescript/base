@@ -15,7 +15,6 @@ nav ul li a,
 .mobile-nav__header li a,
 .modal--content li a {
     text-decoration: none;
-    color: #000;
 }
 
 .nav {
@@ -99,14 +98,16 @@ nav ul li a,
     color: rgb(124, 116, 116);
 }
 
-.nav-logo--color {
-    color: #fff;
+.nav-logo a {
+    color: #000;
 }
 
-nav ul li a,
-.modal--header li a,
-.mobile-nav__header li a,
-.modal--content li a {
-    text-decoration: none;
-    color: #003249;
+.modal--content--style li {
+    border: 1px solid black;
+    padding: 0.5rem 0;
+    border-radius: 4px;
+    background: #fff;
+    width: 50%;
+    margin: 1rem auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
