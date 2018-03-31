@@ -62,6 +62,7 @@ nav ul li a,
         content: "\00d7";
         display: inline-block;
         margin-right: 0.25rem;
+        font-size: 1.3rem;
     }
     .mobile-ham, .close {
         cursor: pointer;
@@ -77,7 +78,6 @@ nav ul li a,
         display: block;
         text-align: center;
     }
-    
 }
 
 /*  legacy browsers support
@@ -90,6 +90,22 @@ nav ul li a,
     color: black;
 } */
 
+/**
+ * Nav Font Size
+ */
+@media (max-width: 600px) {
+    .nav-logo,
+    .modal--content--style li a,
+    .mobile-ham,
+    .close {
+        font-size: 1.3rem;
+        
+    }
+}
+
+/**
+ * Nav Styles
+ */
 .nav--style {
     box-shadow: 0px 0px 14px 0 rgba(0, 0, 0, 0.75);
 }
@@ -104,10 +120,10 @@ nav ul li a,
 
 .modal--content--style li {
     border: 1px solid black;
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
     border-radius: 4px;
     background: #fff;
-    width: 50%;
-    margin: 1rem auto;
+    width: 80%;
+    margin: 0 auto 1rem;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
