@@ -63,15 +63,6 @@
     background: #b60505;
 }
 
-.card-btn {
-    background: #c0314f;
-    color: #fff;
-    border: 1px solid #850808;
-}
-
-.card-btn:hover {
-    background: #a1223d;
-}
 /* 
 .btn:active {
     transform: translateY(1px);

@@ -152,6 +152,9 @@
     font-size: .8em;
 }
 
+.card__img {
+    margin-bottom: 1rem;
+}
 
 .card-content {
     display: flex;
@@ -163,6 +166,7 @@
 .card-content__title {
     text-align: center;
     font-size: 1.5rem;
+    margin-bottom: 1rem;
     color: #c0314f;
 }
 
@@ -172,6 +176,19 @@
 
 .card-content .card-btn {
     margin: 0 auto;
+}
+
+/**
+ * Card button styling
+ */
+a.btn.card-btn {
+    background: #c0314f;
+    color: #fff;
+    border: 1px solid #850808;
+}
+
+a.btn.card-btn:hover {
+    background: #a1223d;
 }
 
 /**

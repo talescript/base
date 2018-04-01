@@ -2,6 +2,19 @@
     height: 100vh;
 }
 
+.footer {
+    height: 15vmin;
+}
+
+.hero-title {
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    max-width: 35rem;
+    text-align: center;
+}
+
 .hero--bg {
     background-image: url(../assets/nine.jpg),
     linear-gradient(#a8c0ff, #3f2b96);
@@ -16,7 +29,8 @@
     font-size: 3rem;
 }
 
-.hero--color {
+.hero--color,
+.footer-bg {
     background-color: #373B44;
     color: #fff;
 }
