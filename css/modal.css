@@ -1,7 +1,8 @@
-/**
+    /**
  * Modal
  */
- .modal {
+
+ .base-modal {
     display: none;
     height: 100%;
     left: 0;
@@ -14,38 +15,57 @@
     animation-fill-mode: forwards;
 }
 
-.modal.open {
+.base-modal--header,
+.base-modal--content,
+.base-modal--footer {
+    width: 100%;
+}
+
+.base-modal.open {
     display: flex;
     flex-direction: column;
 }
-body.modal.open {
+
+body.base-modal.open {
     overflow: hidden;
 }
 
-.modal--header,
-.modal--footer {
+/* .base-modal--header,
+.base-modal--footer {
     padding: 0.2rem 0.5rem;
-}
+} */
 
-.modal--content {
+.base-modal--content {
     height: 100%;
     overflow-y: auto;
-    padding: 2.5rem 0.5rem 0;
+    /* padding: 2.5rem 0.5rem 0; */
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideDown {
-    0% {transform: translate3d(0, 0, 0);}
-    100% {transform: translate3d(0, 450px, 0);}
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 450px, 0);
+    }
 }
 
-.modal--header--style,
-.modal--content--style,
-.modal--footer--style {
-    background: #b9314f;
-    color: #fff;
+.base-modal--header--style,
+.base-modal--footer--style {
+    background: #EFEDEB;
+    color: #2F419A;
+}
+
+.base-modal--content--style {
+    background: #62719F;
+    color: #EFEDEB;
 }
