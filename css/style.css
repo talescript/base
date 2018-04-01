@@ -2,16 +2,16 @@
  * Base Styles
  */
 
-html {
+ html {
     -ms-text-size-adjust: 100%; /* 2 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 *, *::before, *::after {
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 /**
@@ -145,7 +145,7 @@ h1, h2, h3, h4 {
 body {
     background: #fff8e7;
     /* cosmic latte */
-}
+} 
 
 
 /**
@@ -153,7 +153,8 @@ body {
  */
 .box {
     margin: 100px auto;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .one,.two,.three {

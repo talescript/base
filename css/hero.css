@@ -17,6 +17,12 @@
 
 .hero--bg {
     background-image: url(../assets/nine.jpg),
+    -webkit-gradient(linear, left top, left bottom, from(#a8c0ff), to(#3f2b96));
+    background-image: url(../assets/nine.jpg),
+    -webkit-linear-gradient(#a8c0ff, #3f2b96);
+    background-image: url(../assets/nine.jpg),
+    -o-linear-gradient(#a8c0ff, #3f2b96);
+    background-image: url(../assets/nine.jpg),
     linear-gradient(#a8c0ff, #3f2b96);
     background-position: center top;
     background-repeat: no-repeat;
@@ -36,22 +42,33 @@
 }
 
 .flex-center--hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
-@supports (clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%)){
+@supports ((-webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%)) or (clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%))){
     .clip-right {
-        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
         margin-bottom: -10vw;
     }
 }
 
-@supports (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw))){
+@supports ((-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw))) or (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw)))){
     .clip-left {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 10vw));
         margin-bottom: -10vw;
     }
 }

@@ -2,7 +2,7 @@
  * BLOCK ELEMENT MODIFIER
  * Header
  */
-.btn {
+ .btn {
     display: inline-block;
     line-height: normal;
     white-space: nowrap;
@@ -10,7 +10,10 @@
     text-align: center;
     cursor: pointer;
     -webkit-user-drag: none;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 
     padding: 7px 14px;
     border-radius: 3px;
@@ -22,7 +25,10 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    box-shadow: 0 4px 6px rgba(50, 50, 93, .11),
+    -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, .11),
+                0 1px 3px rgba(0, 0, 0, .08);
+
+            box-shadow: 0 4px 6px rgba(50, 50, 93, .11),
                 0 1px 3px rgba(0, 0, 0, .08);
 }
 
@@ -30,6 +36,8 @@
     color: #444;
     background-color: #e6e6e6;
     border: 1px solid #999;
+    -webkit-transition: background-color 250ms ease-out;
+    -o-transition: background-color 250ms ease-out;
     transition: background-color 250ms ease-out;
 }
 
@@ -49,6 +57,9 @@
 
 .btn--state-success {
     color: #fff;
+    background: #569e3d -webkit-gradient(linear, left top, left bottom, from(#79d858), to(#569e3d)) repeat-x;
+    background: #569e3d -webkit-linear-gradient(#79d858, #569e3d) repeat-x;
+    background: #569e3d -o-linear-gradient(#79d858, #569e3d) repeat-x;
     background: #569e3d linear-gradient(#79d858, #569e3d) repeat-x;
     border-color: #4a993e;
 }
@@ -67,4 +78,3 @@
 .btn:active {
     transform: translateY(1px);
 } */
-
