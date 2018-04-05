@@ -1,0 +1,46 @@
+.flip-card {
+    position: relative;
+    width: 9rem;
+    height: 12rem;
+    perspective: 30rem;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 100ms ease-in;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: rgb(72, 110, 235);
+    background-image: url(../assets/nine.jpg);
+    background-image: url(../assets/nine.jpg),
+    -webkit-gradient(linear, left top, left bottom, from(#a8c0ff), to(#3f2b96));
+    background-image: url(../assets/nine.jpg),
+    -webkit-linear-gradient(#a8c0ff, #3f2b96);
+    background-image: url(../assets/nine.jpg),
+    -o-linear-gradient(#a8c0ff, #3f2b96);
+    background-image: url(../assets/nine.jpg),
+    linear-gradient(#a8c0ff, #3f2b96);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: rgb(146, 28, 28);
+    font-size: 2rem;
+}
+
+.back {
+    background-color: #e9ac4b;
+    transform: rotateY(180deg);
+}
+
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(360deg);
+}
